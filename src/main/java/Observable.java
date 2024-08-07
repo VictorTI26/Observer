@@ -6,12 +6,12 @@ public class Observable {
     private String previsaoAtual;
     private List<Observer> pessoas = new ArrayList<>();
 
-    public void subscribe(Observer pessoas) {
-        this.pessoas.add(pessoas);
+    public void subscribe(Observer pessoa) {
+        this.pessoas.add(pessoa);
     }
 
-    public void unsubscribe(Observer pessoas) {
-        this.pessoas.remove(pessoas);
+    public void unsubscribe(Observer pessoa) {
+        this.pessoas.remove(pessoa);
     }
 
     public void setPrevisao(String previsao) {
